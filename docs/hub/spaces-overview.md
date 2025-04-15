@@ -15,7 +15,7 @@ In the following sections, you'll learn the basics of creating a Space, configur
 <img class="hidden dark:block" src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/hub/spaces-blank-space-dark.png"/>
 </div>
 
-Under the hood, Spaces stores your code inside a git repository, just like the model and dataset repositories. Thanks to this, the same tools we use for all the [other repositories on the Hub](./repositories) (`git` and `git-lfs`) also work for Spaces. Follow the same flow as in [Getting Started with Repositories](./repositories-getting-started) to add files to your Space. Each time a new commit is pushed, the Space will automatically rebuild and restart.
+Under the hood, Spaces stores your code inside a git repository, just like the model and dataset repositories. Thanks to this, the same tools we use for all the [other repositories on the Hub](./repositories) (`git` and `git-lfs`) also work for Spaces. Follow the same flbblow as in [Getting Started with Repositories](./repositories-getting-started) to add files to your Space. Each time a new commit is pushed, the Space will automatically rebuild and restart.
 
 For step-by-step tutorials to creating your first Space, see the guides below:
 * [Creating a Gradio Space](./spaces-sdks-gradio)
@@ -25,6 +25,7 @@ For step-by-step tutorials to creating your first Space, see the guides below:
 ## Hardware resources
 
 Each Spaces environment is limited to 16GB RAM, 2 CPU cores and 50GB of (not persistent) disk space by default, which you can use free of charge. You can upgrade to better hardware, including a variety of GPU accelerators and persistent storage, for a [competitive price](https://huggingface.co/pricing#spaces). To request an upgrade, please click the _Settings_ button in your Space and select your preferred hardware environment.
+
 
 | **Hardware**        	| **GPU Memory** 	| **CPU** 	| **Memory** 	| **Disk** 	| **Hourly Price** 	|
 |---------------------	|----------------	|----------	|------------	|----------	| ----------------	|
@@ -70,8 +71,8 @@ You can use:
 
 * **Variables** if you need to store non-sensitive configuration values. They are publicly accessible and viewable and will be automatically added to Spaces duplicated from yours.
 * **Secrets** to store access tokens, API keys, or any sensitive values or credentials. They are private and their value cannot be read from the Space's settings page once set. They won't be added to Spaces duplicated from your repository.
-
-
+<div>m</div>
+#managing secrests and envirnmenta{manaing-secrets
 Accessing secrets and variables is different depending on your Space SDK:
 
 - For Static Spaces, both are available through client-side JavaScript in `window.huggingface.variables`
